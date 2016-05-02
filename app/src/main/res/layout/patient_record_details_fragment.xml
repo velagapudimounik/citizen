@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorDecorationLight"
+        android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/fill_circle_white">
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/clinicIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/icon_profile_pic"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="35sp" />
+
+            </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amar"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_medium" />
+            <TextView
+                android:id="@+id/Doctor_DHCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" | DH Code"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_medium" />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/patient_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D.O.B : 24th Nov 1998"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/outpatientLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/op_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="09"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/op_count"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/out_patient_prescriptions"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_teen" />
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/outpatientIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/op_count"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/icon_op"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="40sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDecorationLight"
+                android:layout_marginTop="20dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/diagnosticLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/diagnostic_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="02"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/diagnostic_count"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/diagnostic_reports"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_teen" />
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/diagnosticIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/diagnostic_count"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/icon_diagnostic"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="40sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDecorationLight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:id="@+id/hospitalizationLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/hospitalization_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="03"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hospitalization_count"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/hospitalization_reports"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_teen" />
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/hospitalizationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/hospitalization_count"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/icon_hospitalization"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="40sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorDecorationLight"
+                android:layout_marginBottom="20dp" />
+
+
+            <RelativeLayout
+                android:id="@+id/vaccinationLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50">
+
+                <TextView
+                    android:id="@+id/vaccine_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="02"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vaccine_count"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/vaccination_reports"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_teen" />
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/vaccineIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/vaccine_count"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/icon_vaccination"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="40sp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

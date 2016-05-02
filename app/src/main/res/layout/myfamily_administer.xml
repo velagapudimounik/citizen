@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/alreadyAdminister"
+        style="@style/check_box_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:text="@string/alreadyAdministered"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp" />
+
+    <FrameLayout
+        android:id="@+id/clinicLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <Spinner
+            android:id="@+id/changeClinic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_rect_fill_white"
+            android:dropDownVerticalOffset="37dp"
+            android:popupBackground="@drawable/round_rect_fill_white"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/fill_round_rect_light_grey" />
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:text="@string/icon_down_arrow"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/edtTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/doctorName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/doctorNameHint" />
+
+        <EditText
+            android:id="@+id/clinicName"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/clinicNameHint"/>
+
+        <EditText
+            android:id="@+id/dateOfAdminister"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/dateAdministerHint"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doneButton"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/done" />
+
+</LinearLayout>

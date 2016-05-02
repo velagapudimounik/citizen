@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:paddingEnd="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_medium"
+    android:paddingStart="@dimen/margin_medium">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Report - 01 | 24 Feb 2016"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_small" />
+
+
+        <FrameLayout
+            android:id="@+id/arrowicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/draw_circle_grey">
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:rotation="270"
+                android:text="@string/icon_down_arrow"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDecorationLight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="Recombivax Recomvax Rx Recombx Recombivax Recbivax Recombivax Recombivax Recombivax Recovx Rembivax Recombivax Rcombivax combivax Recombix Rembivax RecombiRecombivax Rebivax Recombivax Recx Rbivax R Rebivax Recovax Recombx Recombivax Recombivax Recombivax Recombivax Recombivax Recombivax Recombivax Recombivax Recombivax Recombivax "/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

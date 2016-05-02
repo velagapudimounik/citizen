@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text1"
+                android:text="Disease Name"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedule Date"
+                android:id="@+id/text2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <com.drughub.citizen.utils.DrughubIcon
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/infoBtn"
+           android:textColor="@color/colorPrimary"
+           android:text="@string/icon_vacc"
+           android:textSize="30dp"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true" />
+
+</RelativeLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/textAdministered"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_small"
+            android:layout_marginLeft="120dp"
+            android:gravity="center"
+            android:id="@+id/administeredSchedule"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/textMissed"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_small"
+            android:layout_marginRight="120dp"
+            android:gravity="center"
+            android:id="@+id/missedSchedule"
+            android:background="@color/ColorBlack"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bookedItem"/>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</FrameLayout>

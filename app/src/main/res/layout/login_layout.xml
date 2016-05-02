@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDecorationLight"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userNameTextField"
+                android:hint="@string/hintEmailOrMobile"
+                android:layout_marginBottom="15dp"
+                style="@style/EditTextStyle"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:hint="@string/hintPassword"
+                android:id="@+id/passwordTextField"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                style="@style/EditTextStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Forgot_Password"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/forgotPasswordTextView"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginButton"
+                android:text="@string/login"
+                style="@style/ButtonStyle"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ColorBlack"
+                android:text="@string/signup"
+                android:id="@+id/signUpButton"
+                android:layout_marginTop="10dp"
+                style="@style/ButtonStyle"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDecoration"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LoginUsing"
+                    android:textColor="@color/colorText"
+                    android:background="@color/colorDecorationLight"
+                    android:padding="10dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFacebook"
+                    android:id="@+id/facebookButton"
+                    style="@style/SocialButtonStyle"/>
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/icon_facebook"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorTextLight"
+                    android:paddingLeft="15dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/googlePlusButton"
+                android:text="@string/txtGooglePlus"
+                style="@style/SocialButtonStyle"/>
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/icon_google_plus"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorTextLight"
+                    android:paddingLeft="15dp"/>
+
+            </FrameLayout>
+
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtLinkedIn"
+                android:id="@+id/linkedInButton"
+                style="@style/SocialButtonStyle"/>
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/icon_linkedin"
+                    android:textSize="28sp"
+                    android:textColor="@color/colorTextLight"
+                    android:paddingLeft="15dp"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mahesh"/>
+
+    <FrameLayout
+        android:id="@+id/icon_plus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fill_round_rect_grey">
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:text="@string/icon_plus"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_large" />
+
+    </FrameLayout>
+
+</LinearLayout>

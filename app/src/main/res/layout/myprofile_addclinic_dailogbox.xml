@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mainImageLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/icon_plus"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/colorDecoration">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/colorDecorationLight"
+                            android:textSize="@dimen/text_large" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <EditText
+                android:id="@+id/clinic_name"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintClinicName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/building_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/buildingName" />
+
+                <EditText
+                    android:id="@+id/door_no"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/doorNo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/street_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/streetName" />
+
+                <EditText
+                    android:id="@+id/area_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/areaName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/country_spinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_text_height" />
+
+                    <View
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:layout_gravity="center_vertical|end"
+                        android:background="@drawable/fill_round_rect_light_grey" />
+
+                    <com.drughub.citizen.utils.DrughubIcon
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:gravity="center"
+                        android:text="@string/icon_down_arrow"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/state_spinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_text_height" />
+
+                    <View
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:layout_gravity="center_vertical|end"
+                        android:background="@drawable/fill_round_rect_light_grey" />
+
+                    <com.drughub.citizen.utils.DrughubIcon
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:gravity="center"
+                        android:text="@string/icon_down_arrow"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/district_spinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edit_text_height" />
+
+                    <View
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="@dimen/edit_text_height"
+                        android:layout_gravity="center_vertical|end"
+                        android:background="@drawable/fill_round_rect_light_grey" />
+
+                    <com.drughub.citizen.utils.DrughubIcon
+                        android:layout_width="@dimen/edit_text_height"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:gravity="center"
+                        android:text="@string/icon_down_arrow"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Spinner
+                        android:id="@+id/townorcity_spinner"
+                        style="@style/SpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@drawable/fill_round_rect_light_grey" />
+
+                    <com.drughub.citizen.utils.DrughubIcon
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center"
+                        android:text="@string/icon_down_arrow"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="20sp" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/pincode"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="@string/pincode" />
+
+                <EditText
+                    android:id="@+id/landmark"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_text_height"
+                    android:layout_weight="1"
+                    android:hint="@string/landmark"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/mobile"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hintMobile"
+                android:inputType="phone"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/consultation_fee"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hintConsultationFee"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/consultHome"
+                style="@style/check_box_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:text="@string/consultationAtHomeText"
+                android:textColor="@color/colorTextLight"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/addButton"
+                style="@style/ButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="@string/textAdd" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

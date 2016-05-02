@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorDecorationLight"/>
+
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_card"
+            android:textSize="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="60dp"
+           >
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="13dp"
+        android:id="@+id/text2"
+        android:text="Rajsekhar | Validity:VALID"
+        android:layout_marginLeft="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxx xxxx xxxx 5686"
+                android:layout_marginLeft="12dp"
+                android:textSize="12dp"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/draw_circle_grey"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/icon_delete"
+            android:textSize="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorDecorationLight"/>
+
+
+</LinearLayout>

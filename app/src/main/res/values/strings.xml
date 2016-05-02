@@ -1,0 +1,448 @@
+<resources>
+    <string name="app_name">Citizen App</string>
+
+    <!-- login & registration -->
+    <string name="hintPassword">Password</string>
+    <string name="Forgot_Password"><u>Forgot Password?</u></string>
+    <string name="LoginUsing">Or Login Using</string>
+    <string name="txtFacebook">Facebook</string>
+    <string name="hintEmailOrMobile">Email | Mobile No.</string>
+    <string name="txtGooglePlus">Google+</string>
+    <string name="txtLinkedIn">Linkedin</string>
+    <string name="Name">Name</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="Register">Register</string>
+    <string name="VerifyOTP"><u>Verify OTP</u></string>
+    <string name="Resend"><u>Resend</u></string>
+    <string name="resetPasswordText">Please enter your registered E-mail-ID for a password reset link.</string>
+    <string name="submit">Submit</string>
+    <string name="Thank_you">Thank you for your request.\nA password reset link has been sent to your email address.</string>
+    <string name="OK">Ok</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <!-- Login validations -->
+    <string name="EnterEmail">Please enter your Email ID</string>
+    <string name="EnterValidEmail">Please enter valid Email ID</string>
+    <string name="EnterPassword">Please enter your password</string>
+    <string name="EnterName">Please enter your Name</string>
+    <string name="EnterMobile">Please enter your Mobile Number</string>
+    <string name="EnterValidMobile">Please enter valid Mobile Number</string>
+    <string name="PasswordValidation">Password should be in minimum 8 characters</string>
+
+    <!--Main Tabs-->
+    <string name="my_family">My Family</string>
+    <string name="book_appointments">Book Appointments</string>
+    <string name="orange_wallet">Orange Wallet</string>
+    <string name="more">More</string>
+
+    <!--Consultations-->
+    <string name="todays">Todays</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="missed">Missed</string>
+    <string name="administered">Administered</string>
+    <string name="noAppointments">No Appointments Booked</string>
+    <string name="atClinic">At Clinic</string>
+    <string name="atHome">At Home</string>
+    <string name="patientName">Patient Name</string>
+    <string name="hintChildDHCode">Dh Code | Mobile No</string>
+    <string name="textOR">OR</string>
+    <string name="hintChildName">Name of the Child</string>
+    <string name="child">Child</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="dateOfBirth">Date Of Birth</string>
+    <string name="timeOfBirth">Time Of Birth</string>
+    <string name="parent">Parent</string>
+    <string name="guardian">Guardian</string>
+    <string name="hintName">Name</string>
+    <string name="hintEmail">Email</string>
+    <string name="textAdd">Add</string>
+    <string name="available_inventory">Available Inventory</string>
+    <string name="vaccinate">Vaccinate</string>
+    <string name="hintPatientName">Patient Name</string>
+    <string name="inventory">Inventory</string>
+    <string name="dialog_message_done">Done</string>
+    <string name="dialogDeleteConsultation">Are you Sure?\nYou want to cancel todays appointment.</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="textMissed">Missed</string>
+    <string name="textAdministered">Administered</string>
+    <string name="alreadyAdministered">Already Administered</string>
+    <string name="doctorNameHint">Doctor Name</string>
+    <string name="clinicNameHint">Clinic Name</string>
+    <string name="dateAdministerHint">Date of Administer</string>
+    <string name="patientInfo">D.O.B : %1$s | %2$s | OPI:%3$s</string>
+
+    <!-- MyProfile Strings -->
+    <string name="myProfile">My Profile</string>
+    <string name="changePassword">Change Password</string>
+    <string name="myClinic">My Clinics</string>
+    <string name="hintDesignation">Designation</string>
+    <string name="hintSpecialization">Specialization</string>
+    <string name="hintYearsOfExperience">Years of Experience</string>
+    <string name="hintClinicName">Clinic Name</string>
+    <string name="hintAddress">Address</string>
+    <string name="hintEmailId">E-Mail ID</string>
+    <string name="hintMobile">Mobile</string>
+    <string name="update">Update</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="practiceStartDate">Practice Start Date</string>
+    <string name="addClinic">Add Clinic</string>
+    <string name="editClinic">Edit Clinic</string>
+    <string name="deleteClinicMessage">Are you Sure?\nYou want to remove Clinic.</string>
+    <string name="hintConsultationFee">Consultation Fee</string>
+    <string name="hintClinicTimings">Clinic Timings</string>
+    <string name="Monday_text">Mon</string>
+    <string name="Tuesday_text">Tue</string>
+    <string name="Wednesday_text">Wed</string>
+    <string name="Thursday_text">Thu</string>
+    <string name="Friday_text">Fri</string>
+    <string name="Saturday_text">Sat</string>
+    <string name="Sunday_text">Sun</string>
+    <string name="consultationAtHomeText">Consultation at Home</string>
+    <string name="noClinicsAdded">No clinics Added</string>
+    <string name="txtChange">change</string>
+    <string name="firstName">First name</string>
+    <string name="middleName">Middle name</string>
+    <string name="lastName">Last name</string>
+    <string name="buildingName">Building Name</string>
+    <string name="doorNo">Door no</string>
+    <string name="streetName">Street Name</string>
+    <string name="areaName">Area Name</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="townorcity">Town/City</string>
+    <string name="landmark">Landmark</string>
+    <string name="pincode">Pincode</string>
+    <!-- Add Clinic Validation messages -->
+    <string name="clinicNameValidation">Enter Clinic Name</string>
+    <string name="buildingNumberValidation">Enter Building Name</string>
+    <string name="doorNumberValidation">Enter Door Number</string>
+    <string name="streetNameValidation">Enter Street Name</string>
+    <string name="areaNameValidation">Enter Area Name</string>
+    <string name="stateValidation">Select State</string>
+    <string name="cityValidation">Select City</string>
+    <string name="postalCodeValidation">Enter Postal Code</string>
+    <string name="validpostalCode">Enter Valid Postal Code</string>
+    <string name="landmarkValidation">Enter LandMark </string>
+    <string name="consultaionFeeValidation">Enter Consultation Fee</string>
+    <string name="clinicAdded">Clinic Added Successfully</string>
+    <string name="clinicAddedError">Please try Again</string>
+    <string name="clinicUpdated">Clinic Updated Successfully</string>
+    <string name="Country">Country</string>
+    <string name="State">State</string>
+    <string name="City">City</string>
+    <string name="passwordValidation">Please enter current password</string>
+    <string name="newPasswordValidation">Please enter your new password</string>
+    <string name="ValidNewPassword">Please confirm your new password</string>
+    <string name="passwordAdded">Password Added Successfully </string>
+    <string name="firstNameValidation">Enter First Name</string>
+    <string name="middleNameValidation">Enter Middle Name</string>
+    <string name="lastNameValidation">Enter Last Name</string>
+    <string name="emialIdValidation">Enter Email ID</string>
+    <string name="mobileValidation">Enter Mobile Number</string>
+    <string name="practiceValidation">Select Practice Start Date</string>
+    <string name="countryValidation">Select Country</string>
+    <string name="profileUpdated">Profile Updated Successfully</string>
+
+    <!-- My Order -->
+    <string name="order_id">Order ID :</string>
+    <string name="my_order_status">Order Status :</string>
+    <string name="order_date">Order Date :</string>
+    <string name="payment_method">Payment Method :</string>
+    <string name="shipping_method">Shipping Method :</string>
+    <string name="approval">Approval</string>
+    <string name="shipping">Shipping</string>
+    <string name="processing">Processing</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancel_order_button">Cancel Order</string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_information_title">Order Information</string>
+    <string name="no_orders_available">No Orders Available</string>
+    <string name="orderinfo_dialog_message">"Are you Sure?\nYou want to Cancel Order {Order ID}."</string>
+
+    <!--My Calendar-->
+    <string name="my_calendar">My Calendar</string>
+    <string name="availability">Availability</string>
+    <string name="booked">Booked</string>
+    <string name="myHolidays">My Holidays</string>
+    <string name="noCalendars">No Calendar Entries</string>
+    <string name="hintLocation">Location</string>
+    <string name="hintDateOrPatient">Date | Patient Name</string>
+    <string name="hintDate">DD/MM/YYYY</string>
+    <string name="hintTime">HH:MM</string>
+    <string name="nonWorkingDays">Non-Working Days</string>
+    <string name="deleteCalendarMessage">Are you Sure?\nYou want to delete calendar entry.</string>
+    <string name="deleteAppointmentMessage">Are you Sure?\nYou want to cancel booked appointment.</string>
+    <string name="create_new_calendar">Create New Calendar</string>
+    <string name="textFrom">From</string>
+    <string name="textTo">To</string>
+    <string name="day_wise_schedule">Day Wise Schedule</string>
+
+    <!--Patient Records-->
+    <string name="outpatientPrescription">Out Patient Prescriptions</string>
+    <string name="diagnostic_report">Diagnostic Reports</string>
+    <string name="hintDiagnosticSearch">Diagnostic Centre | Test Name | Clinic</string>
+    <string name="doctorSearch">Docter Name | Clinic</string>
+    <string name="doctorName">Dr. Name</string>
+    <string name="hintHospitalOrClinic">Hospital/Clinic</string>
+    <string name="bookmark">Bookmarked</string>
+    <string name="bookmarkSearch">Patient Name | D.O.B | Mobile</string>
+    <string name="patient_records">Records</string>
+    <string name="out_patient_prescriptions">Out Patient Prescriptions</string>
+    <string name="diagnostic_reports">Diagnostic Reports</string>
+    <string name="hospitalization_reports">Hospitalization Reports</string>
+    <string name="vaccination_reports">Vaccination Reports</string>
+    <string name="patient_namedob">Patient Name | D.O.B</string>
+    <string name="urine_test">Urine Tests</string>
+    <string name="blood_test">Blood Tests</string>
+    <string name="radiological_test">Radiological Tests</string>
+    <string name="orange_connect_temperature">Administered at {temp}°C</string>
+
+    <string name="custom_dialog_default_message">Ok</string>
+    <string name="custom_dialog_no_message">No</string>
+    <string name="custom_dialog_yes_message">Yes</string>
+
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+
+    <string-array name="typesOfRecords">
+        <item>Out Patient Record</item>
+        <item>Diagnostic Report</item>
+        <item>Hospitalization Report</item>
+        <item>Vaccination Report</item>
+        <item>Type Of Record</item>
+    </string-array>
+
+
+    <!-- Cart -->
+    <string name="cart_button">Place Order</string>
+    <string name="custom_dialog_no">No</string>
+    <string name="custom_dialog_yes">Yes</string>
+    <string name="order_summary_button">Confirm Order</string>
+    <string name="payment_option_button">S</string>
+    <string name="rupee">T</string>
+    <string name="cart_place_order_button">Place Order</string>
+    <string name="change_address_button">Ok</string>
+    <string name="confirm_order">has been placed successfully</string>
+    <string name="change_address">Change Shipping Address</string>
+    <string name="total_items">Total Items</string>
+    <string name="total">Total</string>
+    <string name="discount">Discount</string>
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="vat_cst">VAT/CST</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="total_ordered_vaccines">Total Vaccines Ordered</string>
+    <string name="order_details">Order Details</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="order_status">Order Status</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="cart_you_pay">You Pay</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="cart_empty">Your Cart is Empty</string>
+    <string name="cart_title">Cart</string>
+    <string name="cash_on_delivery_title">Cash On Delivery</string>
+    <string name="order_summary_title">Order Summary</string>
+    <string name="payment_options_title">Payment Options</string>
+    <string name="qty">Qty : </string>
+    <string name="enter_coupon_code_hint">Enter Coupon code </string>
+    <string name="deleteCartmessage">Are You Sure ?\nYou want to remove vaccine from cart.</string>
+    <string name="placedOrder_id_message">Order ID : {OrderID}\nhas been placed successfully.</string>
+    <string name="order_summary_itemlist">My Address</string>
+    <string name="textDone">Done</string>
+
+    <!--notification -->
+    <string name="notify_order">Orders Notifications</string>
+    <string name="notify_security">Security Notifications</string>
+    <string name="notify_Transaction">Transaction Notifications</string>
+    <string name="notify_Vachub">Vachub Notifications</string>
+    <string name="notify_Reminder">Reminder Notifications</string>
+    <string name="notify_Promotional">Promotional Notifications</string>
+
+    <!--Orange wallet-->
+    <string name="balance_wallet">Wallet Balance:</string>
+    <string name="hint_amount">Amount</string>
+    <string name="Orange_points">Orange Points</string>
+    <string name="Money_add">Add money</string>
+    <string name="coupon">Coupons</string>
+    <string name="buttonwallet">Redeem</string>
+    <string name="card_save">Saved card</string>
+    <string name="card_add">Add Card</string>
+    <string name="Add_wallet">Add</string>
+    <string name="hint_orangecode">Enter orange code</string>
+    <string name="offers">Available offers</string>
+    <string name="code">GET CODE</string>
+    <string name="Exp_date">Expiry Date</string>
+    <string name="Cards">We accept Debit and Credit cards</string>
+    <string name="hint_card_name">Name on the card</string>
+    <string name="hint_month">MM</string>
+    <string name="hint_year">YYYY</string>
+
+    <string name="rupeeSymbol">\u20B9</string>
+
+    <!--Analytics-->
+    <string name="consumption">Consumption</string>
+    <string name="fmp">Fast-Moving Products</string>
+    <string name="profitability">Profitability</string>
+    <string name="coldhub">coldhub</string>
+    <string name="forecast"><u>Forecast</u></string>
+    <string name="monitoring">Monitoring</string>
+    <string name="minTemp">Min Temp</string>
+    <string name="maxTemp">Max Temp</string>
+
+    <string name="degrees">\u00B0</string>
+    <string name="about_drughub">Vachub helps doctors do business better by leveraging our industry-wide experience, deep technology expertise, comprehensive portfolio of services and vertically aligned business model. Our dedicated emerging technologies \'Centers of Excellence\' enable us to harness the latest technology for delivering business capability to our clients.</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="terms">Terms of Use</string>
+    <string name="drughub_link"><u>www.drughub.in</u></string>
+    <string name="send_to">Share this app</string>
+    <string name="battery">Battery</string>
+    <string-array name="ranges">
+        <item>16</item>
+        <item>25</item>
+        <item>40</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="rangeColors">
+        <item>#E7202B</item>
+        <item>#E86F21</item>
+        <item>#E8E721</item>
+        <item>#1BCA21</item>
+    </string-array>
+
+    <!-- More -->
+    <string name="myhome">My Home</string>
+    <string name="myorders">My Orders</string>
+    <string name="patientrecords">Patient Records</string>
+    <string name="orangeconnect">Orange Connect</string>
+    <string name="orangewallet">Orange Wallet</string>
+    <string name="about_info">About</string>
+    <string name="share_app"><u>Share this app</u></string>
+    <string name="logout_button">Logout</string>
+    <string name="appVersion">App Version :</string>
+
+
+    <!-- @@@@ Drughub Icons @@@@ -->
+
+    <!-- @@@@ Login & Registrations Icons @@@@ -->
+    <string name="icon_facebook">\u0021</string>
+    <string name="icon_google_plus">\u0022</string>
+    <string name="icon_linkedin">\u0023</string>
+    <string name="icon_check_mark_solid">\u002A</string>
+
+    <!-- @@@@ Main Tab Icons @@@@ -->
+    <string name="icon_my_inventory">\u007E</string>
+    <string name="icon_consultations">\u0023</string>
+    <string name="icon_analytics">\u0072</string>
+    <string name="icon_more">\u0021</string>
+
+    <!-- @@@@ My Inventory Icons @@@@ -->
+    <string name="icon_notification">\u0030</string>
+    <string name="icon_cart">\u0069</string>
+    <string name="icon_search">\u0052</string>
+    <string name="icon_money">\u003C</string>
+    <string name="icon_down_arrow">\u0073</string>
+    <string name="icon_add_to_cart">\u006A</string>
+    <string name="icon_close">\u0045</string>
+
+    <!-- @@@@ Cart Icons @@@@ -->
+    <string name="icon_image">\u003E</string>
+    <string name="icon_vial">\u0068</string>
+    <string name="icon_dustbin">\u0050</string>
+    <string name="icon_dollor">\u003C</string>
+    <string name="icon_add_items">\u002C</string>
+    <string name="icon_vaccine">\u007E</string>
+    <string name="icon_rupee">\u006B</string>
+    <string name="icon_location">\u003A</string>
+    <string name="icon_check_mark_stroke">\u004F</string>
+    <string name="icon_dollar">\u003C</string>
+
+    <!-- @@@@ Consultation Icons @@@@ -->
+    <string name="icon_add_consultation">\u002C</string>
+    <string name="icon_profile_pic">\u002B</string>
+    <string name="icon_delete_consultation">\u0045</string>
+    <string name="icon_home">\u0036</string>
+    <string name="icon_clinic">\u0037</string>
+    <string name="icon_calendar">\u007D</string>
+    <string name="icon_vacc">\u004c</string>
+    <string name="icon_settings">\u007F</string>
+    <string name="icon_edit">\u0051</string>
+
+    <!--Patient Records Icons-->
+    <string name="icon_test_urine">\u0057</string>
+    <string name="icon_test_blood">\u0058</string>
+    <string name="icon_test_radiological">\u0059</string>
+    <string name="icon_op">\u0053</string>
+    <string name="icon_diagnostic">\u0054</string>
+    <string name="icon_hospitalization">\u0055</string>
+    <string name="icon_vaccination">\u0056</string>
+    <string name="icon_download">\u0071</string>
+    <string name="icon_fav">\u0072</string>
+    <string name="icon_plus">\u005A</string>
+    <string name="icon_bookmark">\u003D</string>
+
+    <!--Orange wallet icon-->
+    <string name="icon_coin">\u003c</string>
+    <string name="icon_card">\u0062</string>
+    <string name="icon_delete">\u0050</string>
+    <string name="icon_apply">\u004f</string>
+
+    <!-- myprofile icons-->
+    <string name="iconEdit">Q</string>
+    <string name="Image_icon">\u003E</string>
+    <string name="Viewicon">\u0046</string>
+    <string name="Plusicon">\u005A</string>
+    <string name="icon_thumb">\u003B</string>
+    <string name="icon_hospital">\u0055</string>
+    <string name="icon_tickmark">\u004F</string>
+    <string name="icon_foradd_image">\u002D</string>
+    <string name="icon_noimage">\u002B</string>
+    <string name="icon_view">\u0073</string>
+    <string name="icon_rightmark">\u004F</string>
+
+    <string name="icon_reschedule">\u0033</string>
+    <string name="icon_add_calender">\u005A</string>
+    <string name="icon_calender_close">\u00D7</string>
+
+    <!-- More Icons @@@ -->
+    <string name="my_home">\u0036</string>
+    <string name="icon_my_profile">\u0047</string>
+    <string name="icon_my_calender">\u007D</string>
+    <string name="icon_my_orders">\u006E</string>
+    <string name="icon_patient_records">\u006D</string>
+    <string name="orange_connect">\u006F</string>
+    <string name="icon_orange_wallet">\u0034</string>
+    <string name="about">\u004C</string>
+    <string name="logout">\u004D</string>
+
+    <!-- My Order Icon -->
+    <string name="right_arrow">\u0046</string>
+    <string name="empty_cart">\u0069</string>
+    <string name="order_injuction">\u0077</string>
+    <string name="icon_order_status">\u0020</string>
+
+    <!-- Analytics -->
+    <!-- us : unSelected, s : Selected-->
+    <string name="icon_consumption_us">\u0078</string>
+    <string name="icon_fmp_us">\u0079</string>
+    <!--fast moving products-->
+    <string name="icon_profitability_us">\u007A</string>
+    <string name="icon_coldhub_us">\u007B</string>
+
+    <string name="icon_consumption_s">\u0074</string>
+    <string name="icon_fmp_s">\u0075</string>
+    <string name="icon_profitability_s">\u0076</string>
+    <string name="icon_coldhub_s">\u0077</string>
+
+</resources>

@@ -1,0 +1,128 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textSize">@dimen/text_small</item>
+
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EditTextStyle" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/round_rect_fill_white</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_small</item>
+    </style>
+
+    <style name="EditTextStyleTransparent" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/underline_light_grey</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_small</item>
+    </style>
+
+    <style name="EditTextStyleTransparent1" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/underline_light_grey</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:paddingLeft">@dimen/margin_tiny</item>
+        <item name="android:paddingBottom">@dimen/margin_tiny</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="EditTextStyleTransparent2" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/underline_grey</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ButtonStyle" parent="android:Widget.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:height">@dimen/button_height</item>
+        <item name="android:width">@dimen/button_width</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SocialButtonStyle" parent="android:Widget.Button">
+        <item name="android:background">@drawable/fill_round_rect_light_grey_border_grey</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:height">@dimen/button_height</item>
+        <item name="android:width">@dimen/button_width</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/background_selector_white_orange</item>
+        <item name="android:textColor">@drawable/text_selector_grey_white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:height">@dimen/check_box_height</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+    <style name="radio_button_style" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/custom_radio_button</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="check_box_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/custom_check_box</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/round_rect_fill_white</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:dropDownVerticalOffset">@dimen/spinner_vertical_offset</item>
+        <item name="android:popupBackground">@drawable/round_rect_fill_white</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="SpinnerStyleTransparent" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/underline_light_grey</item>
+        <item name="android:height">@dimen/edit_text_height</item>
+        <item name="android:dropDownVerticalOffset">@dimen/spinner_vertical_offset</item>
+        <item name="android:popupBackground">@drawable/round_rect_fill_white</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="CalendarHeaderText">
+        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="CalendarWeekdayText">
+        <item name="android:textSize">@dimen/text_teen</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+</resources>

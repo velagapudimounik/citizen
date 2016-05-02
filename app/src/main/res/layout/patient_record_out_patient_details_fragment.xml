@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDecorationLight"
+        android:gravity="center"
+        android:padding="14dp">
+
+        <FrameLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fill_circle_white">
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:id="@+id/clinicIcon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/icon_profile_pic"
+                android:textColor="@color/colorDecoration"
+                android:textSize="40sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amar | Fever"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/docter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Anudeep"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suriya Nursing Home"
+                android:visibility="visible"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/patient_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 24th Nov 1998"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/out_patient_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+
+</LinearLayout>

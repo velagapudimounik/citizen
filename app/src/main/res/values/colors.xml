@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#AFB3B7</color>
+
+    <color name="colorPrimaryDark">#cc471d</color>
+    <color name="colorPrimary">#ff5722</color>
+    <color name="colorPrimaryLight">#ff9a7a</color>
+    <color name="colorPrimaryDull">#ffccbc</color>
+
+    <color name="colorSecondaryLight">#444D57</color>
+    <color name="colorSecondary">#4C545D</color>
+    <color name="colorSecondaryDark">#38414B</color>
+    <color name="colorTextLight">#9e9e9e</color>
+    <color name="colorText">#7c7c7c</color>
+    <color name="colorTextDark">#000000</color>
+    <color name="colorHint">#CCCCCC</color>
+    <color name="colorDecorationLight">#ededed</color>
+    <color name="colorDecoration">#b7b7b7</color>
+    <color name="colorDecorationDark">#878787</color>
+    <color name="Color_grey">#e7e6e6</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="ColorBlack">#000000</color>
+    <color name="translucent_background">#DD000000</color>
+    <color name="actionBtnBG">#17000000</color>
+    <color name="weekColor">#22000000</color>
+
+</resources>

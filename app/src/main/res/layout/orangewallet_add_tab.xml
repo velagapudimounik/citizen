@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    style = "@style/EditTextStyleTransparent"
+                    android:paddingLeft="0dp"
+                    android:hint="@string/hint_amount"
+                    android:inputType="number"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:text="200"
+                        android:gravity="center"
+                        android:id="@+id/textView1"
+                        android:background="@drawable/round_rect_fill_white"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:text="500"
+                        android:background="@drawable/round_rect_fill_white"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/textView2"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:text="900"
+                        android:background="@drawable/round_rect_fill_white"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/textView3"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_to_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Add_wallet"
+                    style = "@style/ButtonStyle"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="30dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

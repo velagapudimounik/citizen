@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDecorationLight"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDecorationLight"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/linearLayout"
+            android:layout_toStartOf="@+id/linearLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/fill_circle_white" />
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:id="@+id/clinicIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/icon_profile_pic"
+                    android:textColor="@color/colorDecoration"
+                    android:textSize="35sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/patient_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amar"
+                android:textColor="@color/colorTextDark"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/disease_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hepatitis B3"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/administered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administered at 3\u00B0C"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/margin_medium"
+        android:textSize="@dimen/text_medium"
+        android:text="Dr.Sandeep | Sandeep Clinics"
+        android:textColor="@color/colorText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDecorationLight"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orange_connect_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"/>
+
+</LinearLayout>

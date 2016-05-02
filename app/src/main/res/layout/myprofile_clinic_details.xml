@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDecorationLight"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clinic Name"
+        android:id="@+id/ClinicName"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@color/colorWhite" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Color_grey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clinic Address and Mobile Number"
+        android:padding="10dp"
+        android:id="@+id/ClinicAddress"
+        android:background="@color/colorWhite"
+        android:textSize="14sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Color_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_thumb"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="89%"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_dollar"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rupeeSymbol"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consultation_Fee"
+            android:text="400"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagerecyclerview">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

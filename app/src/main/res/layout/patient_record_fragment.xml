@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/testTabs"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone">
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radiobutton_selector"
+                android:button="@null"
+                android:checked="true"
+                android:paddingLeft="30dp"
+                android:text="@string/urine_test"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_tiny" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radiobutton_selector"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:text="@string/blood_test"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_tiny" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radiobutton_selector"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:text="@string/radiological_test"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_tiny" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/icon_test_urine"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorText" />
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/icon_test_blood"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorText" />
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/icon_test_radiological"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_small"
+        android:layout_marginBottom="-5dp">
+
+        <EditText
+            android:id="@+id/patientRecordSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_rect_fill_grey"
+            android:hint="@string/patient_namedob"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="@dimen/margin_small"
+            android:singleLine="true"/>
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:id="@+id/consultationSearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_small"
+            android:text="@string/icon_search"
+            android:textColor="@color/colorText"
+            android:textSize="28sp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/patient_records_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_tiny" />
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDecorationLight"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fill_circle_grey"
+            android:backgroundTintMode="add" />
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:id="@+id/clinicIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/icon_profile_pic"
+            android:textColor="@color/colorDecorationDark"
+            android:textSize="50dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/patientInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="D.O.B : 12 Nov 2015 | 05:12 AM | OPI:55%"
+        android:textSize="@dimen/text_teen" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/margin_medium"
+        android:text="@string/administered"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_teen"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orange_connect_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+
+</LinearLayout>

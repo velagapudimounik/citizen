@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/myclinic_circle"
+        android:id="@+id/frameLayout3">
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/icon_image"
+            android:textSize="20dp"
+            android:textColor="@color/colorDecorationDark"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/frameLayout4"
+        android:layout_toRightOf="@+id/frameLayout3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hospitalName"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:text="Hospital Name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Address"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            android:id="@+id/hospitalAddress" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/draw_circle_grey"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/frameLayout4">
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_view"
+            android:rotation="270"
+            android:textSize="20dp"
+            android:id="@+id/viewIcon"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_edit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_large"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_medium"
+                android:id="@+id/editClinic"/>
+
+            <com.drughub.citizen.utils.DrughubIcon
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_dustbin"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_large"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:id="@+id/deleteClinic"/>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myClinicItem"/>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+</FrameLayout>

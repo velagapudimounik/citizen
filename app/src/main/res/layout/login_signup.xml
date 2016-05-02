@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorDecorationLight">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="@dimen/margin_medium">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:id="@+id/nameSignup"
+                android:hint="@string/Name"
+                android:inputType="textCapWords"
+                style="@style/EditTextStyle" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/mobilesignup"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@drawable/round_rect_fill_white"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Mobile"
+                android:inputType="phone"
+                style="@style/EditTextStyle"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:id="@+id/emailsignup"
+                android:background="@drawable/round_rect_fill_white"
+                android:layout_marginTop="15dp"
+                android:hint="@string/Email"
+                android:inputType="textEmailAddress"
+                style="@style/EditTextStyle"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@drawable/round_rect_fill_white"
+                android:id="@+id/passwordsignup"
+                android:layout_marginTop="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                style="@style/EditTextStyle"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Register"
+                android:id="@+id/registerbutton"
+                android:layout_marginTop="35dp"
+                style="@style/ButtonStyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/VerifyOTP"
+                android:id="@+id/otptextview"
+                android:layout_marginTop="35dp"/>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OTPEdittext"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/text_medium"
+                    android:ems="6"
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"/>
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imagesignup"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/icon_check_mark_solid"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="20dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resend"
+                android:text="@string/Resend"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

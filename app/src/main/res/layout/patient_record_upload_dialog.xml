@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/icon_plus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fill_round_rect_grey">
+
+        <com.drughub.citizen.utils.DrughubIcon
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center"
+            android:text="@string/icon_plus"
+            android:textColor="@color/colorDecorationLight"
+            android:textSize="@dimen/text_large" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_plus"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_large"
+        android:paddingRight="@dimen/margin_large"
+        android:paddingTop="@dimen/margin_large">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height_small">
+
+            <Spinner
+                android:id="@+id/type_reports"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_small"
+                android:background="@drawable/round_rect_fill_grey"
+                android:entries="@array/typesOfRecords"
+                android:paddingLeft="10dp"
+                android:spinnerMode="dropdown" />
+            <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:background="@color/colorDecoration"
+                android:layout_width="@dimen/button_height_small"
+                android:layout_height="@dimen/button_height_small">
+
+                <com.drughub.citizen.utils.DrughubIcon
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/icon_down_arrow"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/text_small" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:hint="@string/patientName" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:hint="@string/doctorName" />
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:hint="@string/hintHospitalOrClinic" />
+
+        <Button
+            android:id="@+id/add_to_cart_db_add_btn"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height_small"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/textAdd" />
+
+    </LinearLayout>
+
+</RelativeLayout>
