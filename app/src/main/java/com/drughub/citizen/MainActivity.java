@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.drughub.citizen.bookappointments.BookAppointmentsFragment;
+import com.drughub.citizen.bookappointments.BookActivity;
 import com.drughub.citizen.notifications.NotificationActivity;
 import com.drughub.citizen.myfamily.MyFamilyFragment;
 import com.drughub.citizen.orangewallet.OrangeWalletFragment;
@@ -83,7 +83,7 @@ public class MainActivity extends BaseActivity {
                         addActionButton(R.string.icon_notification);
                         break;
                     case 1:
-                        fragment = new BookAppointmentsFragment();
+                        fragment = new BookActivity();
                         addActionButton(R.string.icon_notification);
                         break;
                     case 2:
