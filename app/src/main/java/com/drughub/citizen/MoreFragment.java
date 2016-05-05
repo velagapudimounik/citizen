@@ -11,11 +11,11 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.drughub.citizen.login.LoginActivity;
-import com.drughub.citizen.myprofile.MyProfileActivity;
-import com.drughub.citizen.orangewallet.OrangeWalletActivity;
 import com.drughub.citizen.model.User;
+import com.drughub.citizen.myprofile.MyProfileActivity;
 import com.drughub.citizen.orangeconnect.OrangeConnectActivity;
 import com.drughub.citizen.patientrecords.PatientRecordActivity;
+import com.drughub.citizen.vaccinationFAQs.VaccinationContainer;
 
 import io.realm.Realm;
 
@@ -71,11 +71,11 @@ public class MoreFragment extends Fragment {
             }
         });
 
-        View orangewallet = view.findViewById(R.id.orange_wallet);
-        orangewallet.setOnClickListener(new View.OnClickListener() {
+        View vaccinationfaq = view.findViewById(R.id.vaccination_faq);
+        vaccinationfaq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), OrangeWalletActivity.class));
+                startActivity(new Intent(getContext(), VaccinationContainer.class));
 
             }
         });

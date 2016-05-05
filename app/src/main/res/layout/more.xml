@@ -24,7 +24,7 @@
 
                 <ImageView
                     android:layout_width="40dp"
-                    android:layout_height="40dp "
+                    android:layout_height="40dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/mahesh" />
 
@@ -160,7 +160,7 @@
                 android:background="@color/colorSecondaryLight" />
 
             <LinearLayout
-                android:id="@+id/orange_wallet"
+                android:id="@+id/vaccination_faq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -180,7 +180,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="30dp"
                     android:gravity="center_vertical"
-                    android:text="@string/orangewallet"
+                    android:text="@string/vaccination_faq"
                     android:textColor="@color/colorDecoration" />
 
             </LinearLayout>

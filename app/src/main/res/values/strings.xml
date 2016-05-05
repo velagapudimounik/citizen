@@ -329,7 +329,7 @@
     <string name="myorders">My Orders</string>
     <string name="patientrecords">Patient Records</string>
     <string name="orangeconnect">Orange Connect</string>
-    <string name="orangewallet">Orange Wallet</string>
+    <string name="vaccination_faq">Vaccination FAQs</string>
     <string name="about_info">About</string>
     <string name="share_app"><u>Share this app</u></string>
     <string name="logout_button">Logout</string>
@@ -447,5 +447,7 @@
     <string name="icon_fmp_s">\u0075</string>
     <string name="icon_profitability_s">\u0076</string>
     <string name="icon_coldhub_s">\u0077</string>
+   <string name="icon_temperature">\u0066</string>
+    <string name="icon_side_effets">\u0067</string>
 
 </resources>
