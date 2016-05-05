@@ -450,4 +450,7 @@
    <string name="icon_temperature">\u0066</string>
     <string name="icon_side_effets">\u0067</string>
 
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCCdGAaGZipgeIbZKYI8M1Xzlg_4fyZtKw</string>
+
+
 </resources>

@@ -39,4 +39,6 @@ dependencies {
     compile 'com.github.ParkSangGwon:TedPicker:v1.0.10'
     compile 'com.prolificinteractive:material-calendarview:1.2.0'
     compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+
 }
