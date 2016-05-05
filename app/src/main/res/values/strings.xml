@@ -79,7 +79,7 @@
     <!-- MyProfile Strings -->
     <string name="myProfile">My Profile</string>
     <string name="changePassword">Change Password</string>
-    <string name="myClinic">My Clinics</string>
+    <string name="accounts">Accounts</string>
     <string name="hintDesignation">Designation</string>
     <string name="hintSpecialization">Specialization</string>
     <string name="hintYearsOfExperience">Years of Experience</string>
@@ -92,7 +92,7 @@
     <string name="newPassword">New Password</string>
     <string name="confirmPassword">Confirm Password</string>
     <string name="practiceStartDate">Practice Start Date</string>
-    <string name="addClinic">Add Clinic</string>
+    <string name="addAccount">Add Account</string>
     <string name="editClinic">Edit Clinic</string>
     <string name="deleteClinicMessage">Are you Sure?\nYou want to remove Clinic.</string>
     <string name="hintConsultationFee">Consultation Fee</string>
@@ -105,7 +105,7 @@
     <string name="Saturday_text">Sat</string>
     <string name="Sunday_text">Sun</string>
     <string name="consultationAtHomeText">Consultation at Home</string>
-    <string name="noClinicsAdded">No clinics Added</string>
+    <string name="noAccountsAdded">No Accounts Added</string>
     <string name="txtChange">change</string>
     <string name="firstName">First name</string>
     <string name="middleName">Middle name</string>
@@ -116,10 +116,13 @@
     <string name="areaName">Area Name</string>
     <string name="country">Country</string>
     <string name="state">State</string>
+    <string name="gender">Gender</string>
+    <string name="register">Registered By</string>
     <string name="district">District</string>
     <string name="townorcity">Town/City</string>
     <string name="landmark">Landmark</string>
     <string name="pincode">Pincode</string>
+    <string name="save">Save</string>
     <!-- Add Clinic Validation messages -->
     <string name="clinicNameValidation">Enter Clinic Name</string>
     <string name="buildingNumberValidation">Enter Building Name</string>

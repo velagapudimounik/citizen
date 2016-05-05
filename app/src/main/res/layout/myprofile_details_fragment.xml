@@ -19,38 +19,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/doctor_name"
-                android:text="Doctor Name"
+                android:text="Patient Name"
                 android:layout_marginTop="25dp"/>
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="1dp"
                 android:background="@color/Color_grey" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Qualification, Specialization"
-                android:id="@+id/qualification"
-                android:layout_marginTop="25dp"/>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:background="@color/Color_grey" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/practiceStartDate"
-                android:text="Practice Start Date"
-                android:layout_marginTop="25dp" />
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="1dp"
-                android:background="@color/Color_grey" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

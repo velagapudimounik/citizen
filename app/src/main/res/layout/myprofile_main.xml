@@ -151,7 +151,7 @@
             android:background="@color/colorWhite"
             android:button="@null"
             android:gravity="center"
-            android:text="@string/myClinic"
+            android:text="@string/accounts"
             android:textColor="@drawable/tabs_text_selector_grey_orange"
             android:textSize="12sp" />
 

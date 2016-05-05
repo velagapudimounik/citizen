@@ -154,8 +154,8 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
             getData();
 
         initMyProfile();
-        initProfileDetails();
-        initProfileEditDetails();
+//        initProfileDetails();
+//        initProfileEditDetails();
         initChangePassword();
         initMyClinics();
 //        createLocationRequest();
@@ -171,7 +171,7 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
     private void initMyClinics() {
         mRecyclerView = (RecyclerView) findViewById(R.id.myclinic_recyclerview);
         itemView = (LinearLayout) findViewById(R.id.no_items);
-        findViewById(R.id.addClinicButton).setOnClickListener(this);
+        findViewById(R.id.addAccountButton).setOnClickListener(this);
     }
 
     private void initChangePassword() {
@@ -185,14 +185,14 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
 
     }
 
-    private void initProfileEditDetails() {
+/*    private void initProfileEditDetails() {
         spinnerCountry = (Spinner) findViewById(R.id.spinnerCountry);
         spinnerState = (Spinner) findViewById(R.id.spinnerState);
         spinnerDistrict = (Spinner) findViewById(R.id.spinnerDistrict);
         spinnerCity = (Spinner) findViewById(R.id.spinnerCity);
-        spinnerQualification = (Spinner) findViewById(R.id.spinnerQualification);
-        spinnerSpecialization = (Spinner) findViewById(R.id.spinnerSpecialization);
-        addQualification = findViewById(R.id.addQualification);
+//        spinnerQualification = (Spinner) findViewById(R.id.spinnerQualification);
+//        spinnerSpecialization = (Spinner) findViewById(R.id.spinnerSpecialization);
+//        addQualification = findViewById(R.id.addQualification);
 
         editFirstName = (EditText) findViewById(R.id.editFirstName);
         editMiddleName = (EditText) findViewById(R.id.editMiddleName);
@@ -235,9 +235,9 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
 
         findViewById(R.id.buttonUpdate).setOnClickListener(this);
 
-    }
+    }*/
 
-    private void addQualificationDialog() {
+ /*   private void addQualificationDialog() {
         AlertDialog.Builder alert = new AlertDialog.Builder(MyProfileActivity.this);
         final EditText editText = new EditText(MyProfileActivity.this);
         alert.setTitle("Qualification");
@@ -287,8 +287,8 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
 
             }
         }, "Please Wait...");
-    }
-
+    }*/
+/*
     private void initProfileDetails() {
         doctorNameDetails = (TextView) findViewById(R.id.doctor_name);
         qualification = (TextView) findViewById(R.id.qualification);
@@ -351,6 +351,7 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
         }
 
     }
+    */
 
     private void initMyProfile() {
         mProfileRadiogroup = (RadioGroup) findViewById(R.id.myProfileRadiogroup);
@@ -380,7 +381,9 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
         rightIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateProfile();
+                //updateProfile();
+                onUpdateProfile();
+
             }
         });
         editIcon.setOnClickListener(new View.OnClickListener() {
@@ -630,7 +633,7 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
             doctorName.setText("Dr." + serviceProvider.getFirstName());
             doctorDHCode.setText("" + serviceProvider.getSpProfileId());
             doctorEmail.setText(serviceProvider.getEmailId());
-            setDetails();
+            //setDetails();
         }
         detailsLayout.setVisibility(View.VISIBLE);
         rightIcon.setVisibility(View.INVISIBLE);
@@ -656,12 +659,14 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonUpdate:
-                updateProfile();
+                onUpdateProfile();
+                //updateProfile();
+
                 break;
             case R.id.buttonSubmit:
                 changePassword();
                 break;
-            case R.id.addClinicButton:
+            case R.id.addAccountButton:
                 addClinic();
                 break;
         }

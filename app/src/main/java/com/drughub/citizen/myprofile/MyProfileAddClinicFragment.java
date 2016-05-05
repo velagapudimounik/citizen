@@ -63,8 +63,8 @@ public class MyProfileAddClinicFragment extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        getActivity().setTitle(getString(R.string.addClinic));
         View view = inflater.inflate(R.layout.myprofile_addclinic_dailogbox, container, false);
+     /*   getActivity().setTitle(getString(R.string.addClinic));
         spinnerCountry = (Spinner) view.findViewById(R.id.country_spinner);
         spinnerState = (Spinner) view.findViewById(R.id.state_spinner);
         spinnerDistrict = (Spinner) view.findViewById(R.id.district_spinner);
@@ -78,11 +78,11 @@ public class MyProfileAddClinicFragment extends DialogFragment {
         consultationFee = (EditText) view.findViewById(R.id.consultation_fee);
         pincode = (EditText) view.findViewById(R.id.pincode);
         landmark = (EditText) view.findViewById(R.id.landmark);
-        addClinic = (Button) view.findViewById(R.id.addButton);
         consultationHome = (CheckBox) view.findViewById(R.id.consultHome);
         // FrameLayout plusicon=(FrameLayout)view.findViewById(R.id.plusicon);
         image_urls = new ArrayList<>();
-        image_urls.add(0, Uri.EMPTY);
+        image_urls.add(0, Uri.EMPTY);*/
+        addClinic = (Button) view.findViewById(R.id.addButton);
 
         selectedClinic = null;
 
@@ -119,16 +119,16 @@ public class MyProfileAddClinicFragment extends DialogFragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        imageLayout = (LinearLayout) view.findViewById(R.id.mainImageLayout);
+       // imageLayout = (LinearLayout) view.findViewById(R.id.mainImageLayout);
         FrameLayout iconPlus = (FrameLayout) view.findViewById(R.id.icon_plus);
-        iconPlus.setOnClickListener(new View.OnClickListener() {
+/*        iconPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ImagePickerActivity.class);
                 startActivityForResult(intent, SELECT_PICTURE);
             }
-        });
-        addClinic.setOnClickListener(new View.OnClickListener() {
+        });*/
+/*        addClinic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String clinicName = clinic_Name.getText().toString();
@@ -404,8 +404,9 @@ public class MyProfileAddClinicFragment extends DialogFragment {
 
                 }
             }
-        }
+        }*/
     }
+
 
 
 }
