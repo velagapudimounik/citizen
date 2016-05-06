@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RadioGroup
+        android:id="@+id/Radiogrp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/book"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/tabs_text_selector_grey_orange"
+            android:background="@drawable/border"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Book" />
+
+        <RadioButton
+            android:id="@+id/booked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:textColor="@drawable/tabs_text_selector_grey_orange"
+            android:text="Booked" />
+
+        <RadioButton
+            android:id="@+id/cancelled"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/tabs_text_selector_grey_orange"
+            android:background="@drawable/border"
+
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+
+            android:text="Cancelled" />
+
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Radiogrp" />
+
+
+</RelativeLayout>

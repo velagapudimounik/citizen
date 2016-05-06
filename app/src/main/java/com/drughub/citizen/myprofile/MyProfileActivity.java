@@ -195,7 +195,7 @@ public class MyProfileActivity extends BaseActivity implements View.OnClickListe
 //        addQualification = findViewById(R.id.addQualification);
 
         editFirstName = (EditText) findViewById(R.id.editFirstName);
-        editMiddleName = (EditText) findViewById(R.id.editMiddleName);
+                editMiddleName = (EditText) findViewById(R.id.editMiddleName);
         editLastName = (EditText) findViewById(R.id.editLastName);
         editBuildNumber = (EditText) findViewById(R.id.editBuildingName);
         // editYearsOfExp = (EditText) findViewById(R.id.editYearsOfExperience);

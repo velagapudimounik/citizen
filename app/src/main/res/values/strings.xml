@@ -452,5 +452,5 @@
 
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCCdGAaGZipgeIbZKYI8M1Xzlg_4fyZtKw</string>
 
-
+    <string name="icon_gear">\u0044</string>
 </resources>
