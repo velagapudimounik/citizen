@@ -64,10 +64,10 @@ public class MainActivity extends BaseActivity {
 //        addTab(tabLayout, R.string.analytics, R.string.icon_analytics);
 //        addTab(tabLayout, R.string.more, R.string.icon_more);
 
-        addTab(tabLayout, R.string.my_family, R.drawable.ic_vaccine);
-        addTab(tabLayout, R.string.book_appointments, R.drawable.ic_consultations);
-        addTab(tabLayout, R.string.orange_wallet, R.drawable.ic_analytics);
-        addTab(tabLayout, R.string.more, R.drawable.ic_more);
+        addTab(tabLayout, R.string.my_family, R.drawable.ic_action_1);
+        addTab(tabLayout, R.string.book_appointments, R.drawable.ic_action_2);
+        addTab(tabLayout, R.string.orange_wallet, R.drawable.ic_action_3);
+        addTab(tabLayout, R.string.more, R.drawable.ic_action_4);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
